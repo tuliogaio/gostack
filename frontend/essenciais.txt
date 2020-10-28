@@ -1,0 +1,22 @@
+- Babel: Converter (transpilar) código do React para um código que o brownser entenda
+- Webpack: Para cada tipo de arquivo (.js, .css, .png) eu vou converter o código de uma maneira diferente.
+-   Loaders: babel-loader, css-loader, image-loader
+
+- Instalação para configuração do ambiente
+- yarn init
+- Criar pasta src
+- Criar pasta public
+- public/index.html > Template HTML5 + div#app
+- yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli
+- Criar arquivo babel.config.js
+  - Exportar o módulo com os presets instalados
+    - @babel/preset-env : Converte código JS moderno em JS antigo baseado no ambiente da nossa aplicação
+    - @babel/preset-react:  Adiciona as funcionalidades do React nesta conversão
+- yarn add @babel/cli: interface de linha de comando para usar no terminal
+- Criar arquivo webpack.config.js: automatiza o processo de identificação dos arquivos para conversão, ativando os loaders necessários.
+- yarn add babel-loader: converter arquivos .js
+- yarn webpack --mode development: converte os arquivos conforme configuração.
+- yarn add webpack-dev-server -D: servidor de desenvolvimento do webpack (dependência de dev env).
+- yarn webpack-dev-server --mode development | yarn webpack serve --mode development: manter o servidor ativo convertendo os arquivos sempre que houver alteração.
+- yarn add style-loader css-loader: permitir utilização de arquivos css e estilos junto ao webpack
+- yarn add file-loader: permite carregar arquivos para dentro da aplicação
