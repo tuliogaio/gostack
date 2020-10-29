@@ -1,5 +1,6 @@
 const express = require('express')
 const { uuid, isUuid } = require('uuidv4')
+const cors = require('cors')
 
 const app = express()
 
@@ -7,6 +8,7 @@ const app = express()
  * Necessário para processar request e response JSON
  * Deve ser inserido antes das rotas
  */
+app.use(cors())
 app.use(express.json())
 
 /**

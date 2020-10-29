@@ -20,3 +20,5 @@
 - yarn webpack-dev-server --mode development | yarn webpack serve --mode development: manter o servidor ativo convertendo os arquivos sempre que houver alteração.
 - yarn add style-loader css-loader: permitir utilização de arquivos css e estilos junto ao webpack
 - yarn add file-loader: permite carregar arquivos para dentro da aplicação
+- yarn add axios: requisições http
+- yarn add @babel/plugin-transform-runtime: permite utilizar async e await
